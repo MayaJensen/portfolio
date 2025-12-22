@@ -5,45 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <meta name="robots" content="noindex" />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Italiana&family=Inria+Serif:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- CSS (UÆNDRET) -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
+
   <body>
-    <header class="nav">
-      <img class="logo" src="images/logo.webp" alt="Logo" />
+    <header class="hero">
+      <img src="SVG/logo-kopi.svg" alt=" logo" class="hero-logo" />
 
-      <button class="burger" aria-label="Åbn menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <nav class="nav">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-      <nav class="menu">
-        <a href="portfolio.html">Portfolio</a>
-        <a href="mobilsite.html">1. semester</a>
-        <a href="ommig.html">Om mig</a>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="mobilsite.html">1. Semester</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
+        </ul>
       </nav>
+
+      <section class="hero2">
+        <img
+          src="images/firstsite.webp"
+          alt="stående billede"
+          class="half-image"
+        />
+        <div class="hero-text">
+          <h1>port<span class="folio">folio</span></h1>
+          <h2>Maya Christine Jensen</h2>
+          <h3>1. Semester</h3>
+        </div>
+      </section>
     </header>
-    <main></main>
+
     <script src="main.js"></script>
   </body>
 </html>

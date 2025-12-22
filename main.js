@@ -1,6 +1,17 @@
+console.log(" JS loaded");
+
+// burgermenu
 const burger = document.querySelector(".burger");
-const menu = document.querySelector(".menu");
+const nav = document.querySelector(".nav");
 
 burger.addEventListener("click", () => {
-  menu.classList.toggle("active");
+  nav.classList.toggle("open");
+});
+
+const links = document.querySelectorAll(".nav ul a");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
 });
