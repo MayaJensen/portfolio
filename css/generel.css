@@ -2,11 +2,14 @@ html {
   background-color: #efece7;
   color: #1a1a1a;
 }
-
-.italianno-regular {
-  font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
+h1 {
+  font-family: "italianno", cursive;
+}
+h2 {
+  font-family: "italianno", cursive;
+}
+h3 {
+  font-family: "italianno", cursive;
 }
 
 .italianno-regular {
@@ -15,67 +18,91 @@ html {
   font-style: normal;
 }
 
-.italianno-regular {
-  font-family: "Italianno", cursive;
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* header */
-.logo {
-  width: 70px;
-  height: auto;
+.inria-serif-light {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* NAV */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+/* HEADER */
+
+/* HERO  */
+.hero {
   position: relative;
+  height: 50px;
 }
 
-/* BURGER */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-logo {
+  position: absolute;
+  margin-left: 10px;
+  width: 60px;
+}
+
+/* BURGER MENU */
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+}
+
+/* BURGER IKON */
 .burger {
-  width: 30px;
-  height: 22px;
+  width: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: none;
-  border: none;
+  gap: 5px;
   cursor: pointer;
 }
 
 .burger span {
   height: 2px;
   width: 100%;
-  background: black;
+  background: #1a1a1a;
   display: block;
 }
 
-/* MENU (mobil) */
-.menu {
+/* MENU  */
+.nav ul {
   position: absolute;
-  top: 70px;
-  right: 20px;
-  padding-top: 20px;
+  top: 48px;
+  right: 0;
+  align-items: flex-end;
   display: none;
   flex-direction: column;
-  gap: 20px;
-  text-align: right;
+  gap: 10px;
+  list-style: none;
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
-/* når menu er åben */
-.menu.active {
+/* BURGERMENU ÅBEN */
+.nav.open ul {
   display: flex;
 }
 
-/* footer */
+/* LINKS */
+.nav ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Hover */
+.nav ul li a:hover {
+  opacity: 0.6;
+}
