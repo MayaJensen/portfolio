@@ -139,7 +139,7 @@
 
 .read-more {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 👈 ved siden af hinanden */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-content: center;
   text-align: center;
