@@ -136,3 +136,30 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+.read-more {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 ved siden af hinanden */
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.knap {
+  text-decoration: none;
+  color: inherit;
+}
+
+.knap img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+
+  margin: 5px 10px;
+}
+
+.knap p {
+  font-family: "Italianno", cursive;
+  font-size: 22px;
+}
