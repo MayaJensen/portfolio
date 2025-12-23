@@ -5,27 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <meta name="robots" content="noindex" />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Italiana&family=Inria+Serif:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Italianno&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- CSS (UÆNDRET) -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div class="hero">
+        <img src="SVG/logo-kopi.svg" alt=" logo" class="hero-logo" />
+
+        <nav class="nav">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="mobilsite.html">1. Semester</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+          </ul>
+        </nav>
+
+        <section class="hero2">
+          <img
+            src="images/firstsite.webp"
+            alt="stående billede"
+            class="half-image"
+          />
+          <div class="hero-text">
+            <h1>port<span class="folio">folio</span></h1>
+            <h2>Maya Christine Jensen</h2>
+            <h3>1. Semester</h3>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="Introduktion">
+        <h2>Introduktion</h2>
+        <p>
+          Velkommen til min portfolio! Her finder du et univers der afspejler
+          mit 1. semester som mulitimedie studerende på EK. Du vil her kunne
+          danne et overblik over de projekter og temaer jeg har arbejdet med -
+          Både hvilken proces der har ledt til det færdige resultat , men også
+          hvad jeg personligt har lært fra dem. Jeg håber du vil følge med på
+          min rejse!
+        </p>
+        <img
+          class="intropic"
+          src="images/intro.webp"
+          alt="pige med farvet lys på ansigtet"
+        />
+      </section>
+
+      <div class="line"></div>
+
+      <h2 class="overskrift">Mit grafiske arbejde</h2>
+
+      <section class="svg-scroll">
+        <div class="svg-track">
+          <img src="SVG/esso_logo.svg" alt="esso" />
+          <img src="SVG/aorqlogo.svg" alt="ikon" />
+          <img src="SVG/favicon.svg" alt="ikon" />
+          <img src="SVG/kaffetsunami.svg" alt="ikon" />
+          <img src="SVG/logo-kopi.svg" alt="ikon" />
+          <img src="SVG/logo.svg" alt="ikon" />
+
+          <img src="SVG/esso_logo.svg" alt="esso" />
+          <img src="SVG/aorqlogo.svg" alt="ikon" />
+          <img src="SVG/favicon.svg" alt="ikon" />
+          <img src="SVG/kaffetsunami.svg" alt="ikon" />
+          <img src="SVG/logo-kopi.svg" alt="ikon" />
+          <img src="SVG/logo.svg" alt="ikon" />
+        </div>
+      </section>
+      <div class="line"></div>
+      <h2 class="overskrift">Mine tema websites</h2>
+      <div id="iphones">
+        <section class="mobil1">
+          <div class="iphone-stack">
+            <img src="images/mobilsitem.webp" alt="bund" class="img-bottom" />
+            <img src="images/iphone_temp.webp" alt="top" class="img-top" />
+          </div>
+        </section>
+        <section class="mobil2">
+          <div class="iphone-stack">
+            <img src="images/aoram.webp" alt="bund" class="img-bottom" />
+            <img src="images/iphone_temp.webp" alt="top" class="img-top" />
+          </div>
+        </section>
+        <section class="mobil3">
+          <div class="iphone-stack">
+            <img src="images/katastrofem.webp" alt="bund" class="img-bottom" />
+            <img src="images/iphone_temp.webp" alt="top" class="img-top" />
+          </div>
+        </section>
+        <section class="mobil4">
+          <div class="iphone-stack">
+            <img src="images/essom.webp" alt="bund" class="img-bottom" />
+            <img src="images/iphone_temp.webp" alt="top" class="img-top" />
+          </div>
+        </section>
+      </div>
+      <div class="line"></div>
+      <h2 class="overskrift">Læs mere om</h2>
+      <section class="read-more">
+        <a href="ommig.html" class="knap">
+          <img src="images/ommig.webp" alt="Om mig" />
+          <p>Om mig</p>
+        </a>
+
+        <a href="portfolio.html" class="knap">
+          <img src="images/portfolio.webp" alt="Min portfolio" />
+          <p>Min portfolio</p>
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-line"></div>
+
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>Email: Maje0032@stud.ek.dk</p>
+          <p>Tlf: +45 30825530</p>
+        </div>
+
+        <div class="footer-socials">
+          <h4>Socials</h4>
+          <div class="icons">
+            <img src="SVG/linkedin.svg" alt="LinkedIn" />
+            <img src="SVG/insta.svg" alt="Instagram" />
+            <img src="SVG/facebook.svg" alt="Facebook" />
+            <img src="SVG/pinterest.svg" alt="Pinterest" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-copy">
+        © 2025 Maya Christine Jensen. Alle rettigheder forbeholdes.
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>

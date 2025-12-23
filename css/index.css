@@ -1,0 +1,165 @@
+.hero {
+  min-height: 100vh;
+}
+.hero2 {
+  position: relative;
+  min-height: 100vh;
+}
+.half-image {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% 50%;
+  filter: grayscale(100%);
+}
+
+.hero-text h1 {
+  position: absolute;
+  margin-top: 260px;
+  left: 15%;
+  z-index: 5;
+  font-size: 150px;
+  font-weight: 100;
+}
+.hero-text h2 {
+  position: absolute;
+  margin-top: 410px;
+  left: 14%;
+  z-index: 5;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.hero-text h3 {
+  position: absolute;
+  margin-top: 380px;
+  left: 70%;
+  z-index: 5;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
+
+.folio {
+  color: white;
+}
+
+.Introduktion {
+  font-size: 16px;
+  line-height: 2;
+  margin: 20px 40px;
+  max-width: 800px;
+  text-align: justify;
+}
+.Introduktion h2 {
+  line-height: 1;
+  text-align: center;
+}
+
+.intropic {
+  border-radius: 200px;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.line {
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 60px auto;
+}
+
+.overskrift {
+  text-align: center;
+}
+
+.svg-scroll {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.svg-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.svg-scroll img {
+  width: 70px;
+}
+
+.iphone-stack {
+  position: relative;
+  width: 80px;
+  height: 200px;
+}
+
+.img-bottom {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  width: auto;
+  height: 130px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.img-top {
+  position: absolute;
+  z-index: 2;
+  object-fit: cover;
+  width: 100px;
+  height: 150px;
+}
+
+#iphones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.read-more {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.knap {
+  text-decoration: none;
+  color: inherit;
+}
+
+.knap img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+
+  margin: 5px 10px;
+}
+
+.knap p {
+  font-family: "Italianno", cursive;
+  font-size: 22px;
+}
