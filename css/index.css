@@ -76,7 +76,7 @@
   margin: 60px auto;
 }
 
-.grafisk {
+.overskrift {
   text-align: center;
 }
 
@@ -104,4 +104,37 @@
 
 .svg-scroll img {
   width: 70px;
+}
+
+.iphone-stack {
+  position: relative;
+}
+
+.img-bottom {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  width: auto;
+  height: 130px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.img-top {
+  position: absolute;
+  z-index: 2;
+  object-fit: cover;
+  width: 100px;
+  height: 150px;
+}
+
+.mobil2 {
+  margin-left: 100px;
+}
+.mobil3 {
+  margin-left: 200px;
+}
+.mobil4 {
+  margin-left: 300px;
 }
