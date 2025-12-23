@@ -13,6 +13,10 @@ h2 {
 h3 {
   font-family: "italianno", cursive;
 }
+h4 {
+  font-family: "inria-serif", serif;
+  font-weight: 300;
+}
 
 .italianno-regular {
   font-family: "Italianno", cursive;
@@ -107,4 +111,55 @@ h3 {
 /* Hover */
 .nav ul li a:hover {
   opacity: 0.6;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 60px;
+  font-size: 14px;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+/*  To kolonner */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+}
+
+/* Social icons */
+.icons {
+  display: flex;
+  gap: 14px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Midterlinje */
+.footer-divider {
+  width: 60px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 40px auto 20px;
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
 }
