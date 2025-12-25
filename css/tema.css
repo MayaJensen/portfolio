@@ -100,3 +100,15 @@ main {
   width: 100px;
   height: 200px;
 }
+
+.læring p {
+  margin-bottom: 0;
+}
+.læring ul {
+  line-height: 2;
+  margin-left: 20px;
+}
+.punkter {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
