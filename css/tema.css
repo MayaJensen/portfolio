@@ -78,12 +78,18 @@ main {
   border-radius: 4px;
 }
 
+.iphone-stacks {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 .iphone-stack {
   position: relative;
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .img-bottom {
