@@ -13,9 +13,13 @@ main {
   justify-content: center;
   gap: 40px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 0;
   margin-bottom: 20px;
   margin-top: 30px;
+}
+.tema-nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .project-nav h3 {
@@ -101,10 +105,10 @@ main {
   height: 200px;
 }
 
-.læring p {
+.section-with-points p {
   margin-bottom: 0;
 }
-.læring ul {
+.section-with-points ul {
   line-height: 2;
   margin-left: 20px;
 }
