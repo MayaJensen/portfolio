@@ -28,3 +28,22 @@
   font-size: 20px;
   font-weight: 100;
 }
+
+.about {
+  max-width: 700px;
+
+  padding: 2rem 1.5rem 3rem;
+  line-height: 1.9;
+}
+
+.about h2 {
+  font-size: 35px;
+  margin-bottom: -30px;
+}
+
+.about h3 {
+  font-size: 35px;
+  font-weight: 100;
+
+  margin-left: 30px;
+}
