@@ -74,3 +74,40 @@
   width: 100%;
   height: 400px;
 }
+
+.education {
+  text-align: center;
+  padding: 3rem 1rem 5rem;
+  border-bottom: 1px solid #000;
+}
+
+.education h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.edu-item h4 {
+  margin-bottom: 10px;
+}
+
+.edu-line {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 30px;
+  margin-top: 10px;
+  margin: 20px auto;
+}
+
+.experience {
+  text-align: center;
+  padding: 3rem 1rem 5rem;
+}
+
+.experience h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ex-item h4 {
+  margin-bottom: 10px;
+}
