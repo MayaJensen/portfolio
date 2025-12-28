@@ -13,10 +13,16 @@ main {
   justify-content: center;
   gap: 40px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 0;
   margin-bottom: 20px;
   margin-top: 30px;
 }
+.tema-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
 
 .project-nav h3 {
   font-weight: 300;
@@ -74,12 +80,21 @@ main {
   border-radius: 4px;
 }
 
+
+.iphone-stacks {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .iphone-stack {
   position: relative;
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
+
 }
 
 .img-bottom {
@@ -100,3 +115,16 @@ main {
   width: 100px;
   height: 200px;
 }
+
+.section-with-points p {
+  margin-bottom: 0;
+}
+.section-with-points ul {
+  line-height: 2;
+  margin-left: 20px;
+}
+.punkter {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
