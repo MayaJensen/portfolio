@@ -22,6 +22,8 @@ main {
   color: black;
 }
 
+
+
 .project-nav h3 {
   font-weight: 300;
 }
@@ -78,11 +80,13 @@ main {
   border-radius: 4px;
 }
 
+
 .iphone-stacks {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
+
 .iphone-stack {
   position: relative;
   width: 100%;
@@ -90,6 +94,7 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+
 }
 
 .img-bottom {
@@ -122,3 +127,4 @@ main {
   margin-bottom: 40px;
   margin-top: 20px;
 }
+
