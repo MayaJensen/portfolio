@@ -13,13 +13,14 @@ main {
   justify-content: center;
   gap: 40px;
   font-size: 18px;
-  font-weight: 0;
+
   margin-bottom: 20px;
   margin-top: 30px;
 }
 .tema-nav a {
   text-decoration: none;
   color: black;
+  font-weight: 100;
 }
 
 .project-nav h3 {
@@ -72,7 +73,7 @@ main {
   top: 0%;
   margin-left: 40px;
   width: 320px;
-  height: auto;
+  height: 210px;
   object-fit: cover;
   z-index: 1;
   border-radius: 4px;
@@ -128,11 +129,24 @@ main {
   .main {
     padding: 50px 80px 80px;
   }
+
+  .burger {
+    display: none;
+  }
+
+  .nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+
   .tema-nav {
     font-size: 20px;
-    font-weight: 100;
+
     gap: 150px;
   }
+
   .project-content {
     max-width: 1200px;
   }
