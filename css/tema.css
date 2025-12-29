@@ -166,6 +166,23 @@ main {
     margin: 0;
     width: 100%;
   }
+  .iphone-stack {
+    height: 300px;
+    margin-top: 100px;
+  }
+  .iphone-stacks {
+    margin-top: 0;
+  }
+  .img-top {
+    height: 300px;
+    width: 200px;
+  }
+  .img-bottom {
+    height: 255px;
+    width: auto;
+    margin-top: 25px;
+    border-radius: 16px;
+  }
 
   .udforsk-btn {
     width: 160px;
