@@ -13,16 +13,15 @@ main {
   justify-content: center;
   gap: 40px;
   font-size: 18px;
-  font-weight: 0;
+
   margin-bottom: 20px;
   margin-top: 30px;
 }
 .tema-nav a {
   text-decoration: none;
   color: black;
+  font-weight: 100;
 }
-
-
 
 .project-nav h3 {
   font-weight: 300;
@@ -74,12 +73,11 @@ main {
   top: 0%;
   margin-left: 40px;
   width: 320px;
-  height: auto;
+  height: 210px;
   object-fit: cover;
   z-index: 1;
   border-radius: 4px;
 }
-
 
 .iphone-stacks {
   display: flex;
@@ -94,7 +92,6 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
-
 }
 
 .img-bottom {
@@ -128,3 +125,86 @@ main {
   margin-top: 20px;
 }
 
+@media (min-width: 1000px) {
+  .main {
+    padding: 50px 80px 80px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .tema-nav {
+    font-size: 20px;
+
+    gap: 150px;
+  }
+
+  .project-content {
+    max-width: 1200px;
+  }
+
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 70px;
+    align-items: start;
+    margin: 120px 0;
+  }
+
+  .desktop-grid.reverse {
+    grid-template-columns: 1fr 1.3fr;
+  }
+  .desktop-grid.reverse .desktop-text {
+    order: 2;
+  }
+
+  .desktop-grid.reverse .desktop-media {
+    order: 1;
+  }
+
+  .desktop-text p,
+  .desktop-text ul {
+    max-width: 620px;
+  }
+
+  .macbook-video {
+    margin-left: 50px;
+    width: 380px;
+    height: 248px;
+  }
+
+  .macbook-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .iphone-stack {
+    height: 300px;
+    margin-top: 100px;
+  }
+  .iphone-stacks {
+    margin-top: 0;
+  }
+  .img-top {
+    height: 300px;
+    width: 200px;
+  }
+  .img-bottom {
+    height: 255px;
+    width: auto;
+    margin-top: 25px;
+    border-radius: 16px;
+  }
+
+  .udforsk-btn {
+    width: 160px;
+    margin-left: 0px;
+  }
+}
