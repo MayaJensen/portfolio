@@ -36,7 +36,7 @@
 .hero-text h3 {
   position: absolute;
   margin-top: 380px;
-  left: 70%;
+  left: 300px;
   z-index: 5;
   font-size: 20px;
   font-weight: 100;
@@ -162,4 +162,101 @@
 .knap p {
   font-family: "Italianno", cursive;
   font-size: 22px;
+}
+
+@media (min-width: 1000px) {
+  .hero-text h1 {
+    font-size: 250px;
+    margin-left: 250px;
+  }
+  .hero-text h2 {
+    margin-left: 255px;
+    margin-top: 500px;
+    font-size: 25px;
+  }
+  .hero-text h3 {
+    margin-top: 460px;
+    font-size: 25px;
+
+    margin-left: 550px;
+  }
+
+  .half-image {
+    transform-origin: left center;
+    transform: scale(1.7);
+    height: 630px;
+  }
+
+  .Introduktion {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 70px;
+    align-items: start;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    justify-content: center;
+  }
+
+  .Introduktion h2 {
+    text-align: start;
+    padding-top: 70px;
+    padding-left: 70px;
+  }
+  .Introduktion p {
+    padding-left: 70px;
+  }
+
+  .intropic {
+    width: 300px;
+  }
+
+  .overskrift {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .svg-scroll {
+    height: 250px;
+    padding-top: 50px;
+  }
+  .svg-scroll img {
+    width: 150px;
+  }
+  .svg-track {
+    gap: 100px;
+  }
+
+  #iphones {
+    gap: 130px;
+    height: 300px;
+    margin-top: 60px;
+  }
+  .img-bottom {
+    height: 200px;
+    margin-top: 18px;
+  }
+
+  .img-top {
+    height: 235px;
+    margin-left: 15px;
+  }
+
+  .forste-knap {
+    margin-left: 400px;
+  }
+  .knap img {
+    width: 300px;
+    height: 300px;
+  }
+  .knap p {
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+  }
+  .read-more {
+    gap: 50px;
+    margin-top: 60px;
+  }
+  
 }
