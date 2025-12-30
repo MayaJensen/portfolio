@@ -175,3 +175,20 @@ h4 {
   border-radius: 2px;
   text-align: center;
 }
+
+@media (min-width: 1000px) {
+  .main {
+    padding: 50px 80px 80px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+}

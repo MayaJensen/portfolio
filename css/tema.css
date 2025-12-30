@@ -126,21 +126,6 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .main {
-    padding: 50px 80px 80px;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  .nav ul {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-  }
-
   .tema-nav {
     font-size: 20px;
 
