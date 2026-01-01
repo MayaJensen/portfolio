@@ -128,6 +128,9 @@
   display: none;
 }
 
+.learn p {
+  margin-bottom: 25px;
+}
 .svg-scroll {
   position: relative;
   height: 300px;
@@ -316,5 +319,17 @@
     100% {
       transform: rotate(360deg) translateX(140px) rotate(-360deg);
     }
+  }
+
+  .desktop-grid-last {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+    position: relative;
+    margin: 20px;
+  }
+  .svg-track {
+    margin-top: 140px;
   }
 }
