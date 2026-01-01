@@ -128,6 +128,89 @@
   display: none;
 }
 
+.svg-scroll {
+  position: relative;
+  height: 300px;
+}
+
+.svg-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-track img {
+  position: absolute;
+  width: 60px;
+  animation: drift 18s ease-in-out infinite alternate;
+  opacity: 0.9;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(20px, -15px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-15px, -10px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(-10px, 15px) rotate(0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+.svg-track img:nth-child(1) {
+  animation-duration: 16s;
+  top: 40%;
+  left: 45%;
+}
+.svg-track img:nth-child(2) {
+  animation-duration: 20s;
+  top: 25%;
+  left: 60%;
+  animation-delay: -0.6s;
+}
+.svg-track img:nth-child(3) {
+  animation-duration: 18s;
+  top: 55%;
+  left: 30%;
+  animation-delay: -1s;
+}
+.svg-track img:nth-child(4) {
+  animation-duration: 22s;
+  top: 35%;
+  left: 70%;
+  animation-delay: -1.6s;
+}
+.svg-track img:nth-child(5) {
+  animation-duration: 19s;
+  top: 65%;
+  left: 40%;
+  animation-delay: -2.2s;
+}
+.svg-track img:nth-child(6) {
+  animation-duration: 23s;
+  top: 45%;
+  left: 20%;
+  animation-delay: -2.8s;
+}
+.svg-track img:nth-child(7) {
+  animation-duration: 21s;
+  top: 20%;
+  left: 35%;
+  animation-delay: -3.2s;
+}
+.svg-track img:nth-child(8) {
+  animation-duration: 24s;
+  top: 60%;
+  left: 65%;
+  animation-delay: -3.8s;
+}
+
 @media (min-width: 1000px) {
   .half-image {
     transform-origin: right top;
@@ -210,5 +293,28 @@
     max-width: 70ch;
     margin-left: 60px;
     margin-top: 50px;
+  }
+
+  .svg-scroll {
+    height: 480px;
+    perspective: 900px;
+  }
+
+  .svg-track img {
+    width: 90px;
+    animation: orbit 20s linear infinite;
+    filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.18));
+  }
+
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(140px) rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg) translateX(140px) rotate(-180deg) scale(1.05);
+    }
+    100% {
+      transform: rotate(360deg) translateX(140px) rotate(-360deg);
+    }
   }
 }
