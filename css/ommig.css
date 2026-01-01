@@ -123,3 +123,92 @@
 .about h2 {
   font-size: 35px;
 }
+
+.cv2 {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .half-image {
+    transform-origin: right top;
+    transform: scale(0.7);
+    height: 1135px;
+    width: 1200px;
+  }
+
+  .hero-text h1 {
+    font-size: 250px;
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 60px;
+    margin-left: 190px;
+    margin-top: 340px;
+    font-weight: 100;
+  }
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 70px;
+    align-items: start;
+    margin: 150px 60px;
+  }
+  .img-top {
+    height: 500px;
+    margin-top: -20px;
+  }
+  .img-bottom {
+    height: 470px;
+    margin-top: -5px;
+    width: 220px;
+  }
+
+  .education {
+    border-bottom: none;
+    border-top: none;
+    border-right: 1px solid #000;
+  }
+  .experience {
+    border-bottom: none;
+  }
+
+  .line {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+  }
+
+  .experience {
+    display: none;
+  }
+
+  .cv-lines {
+    width: 500px; /* justér så det matcher dit layout */
+    margin-top: 10px;
+    line-height: 2;
+  }
+  .cv-lines .years {
+    margin-right: 20px;
+  }
+
+  .cv2 {
+    position: absolute;
+    padding: 40px 60px 55px 25px;
+    display: block; /* hvis du tidligere har display:none på mobil */
+    border-right: 1px solid #000;
+  }
+
+  .desktop-grid-edu {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.5fr;
+    gap: 10px;
+    align-items: start;
+    position: relative;
+  }
+  .learn {
+    max-width: 70ch;
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+}
