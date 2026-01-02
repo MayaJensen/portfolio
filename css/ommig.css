@@ -12,9 +12,12 @@
   object-position: 15% 50%;
   top: 10px;
 }
+.half-image-double {
+  display: none;
+}
 .hero-text h1 {
   position: absolute;
-  margin-top: 290px;
+  margin-top: 310px;
   margin-left: 10px;
   z-index: 5;
   font-size: 110px;
@@ -22,7 +25,7 @@
 }
 .hero-text h2 {
   position: absolute;
-  margin-top: 380px;
+  margin-top: 400px;
   margin-left: 20px;
   z-index: 5;
   font-size: 20px;
@@ -219,7 +222,19 @@
     transform-origin: right top;
     transform: scale(0.7);
     height: 1135px;
-    width: 1200px;
+    width: 700px;
+  }
+  .half-image-double {
+    display: flex;
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    object-position: 50% 15%;
+    margin-right: 400px;
+    transform-origin: right top;
+    transform: scale(0.7);
+    height: 1135px;
+    width: 800px;
   }
 
   .hero-text h1 {
