@@ -1,6 +1,5 @@
 .hero2 {
   position: relative;
-
   min-height: 100vh;
 }
 .half-image {
@@ -10,7 +9,8 @@
   width: 60%;
   height: 100%;
   object-fit: cover;
-  object-position: 35% 50%;
+  object-position: 15% 50%;
+  top: 10px;
 }
 .hero-text h1 {
   position: absolute;
