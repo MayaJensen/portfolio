@@ -90,7 +90,7 @@
   display: flex;
   gap: 40px;
   width: max-content;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
@@ -164,13 +164,42 @@
   font-size: 22px;
 }
 
+[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popover] {
+  padding: 20px;
+  max-width: 600px;
+  max-height: 1000px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+/* USYNLIG KNAP */
+.invisible-trigger {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 60px;
+  height: 130px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
 @media (min-width: 1000px) {
+  .hero2 {
+    max-width: 1100px;
+  }
   .hero-text h1 {
     font-size: 250px;
-    margin-left: 250px;
+    margin-left: 290px;
   }
   .hero-text h2 {
-    margin-left: 255px;
+    margin-left: 295px;
     margin-top: 500px;
     font-size: 25px;
   }
@@ -185,6 +214,7 @@
     transform-origin: left center;
     transform: scale(1.7);
     height: 630px;
+    padding-left: 100px;
   }
 
   .Introduktion {
@@ -200,7 +230,7 @@
 
   .Introduktion h2 {
     text-align: start;
-    padding-top: 70px;
+    padding-top: 130px;
     padding-left: 70px;
   }
   .Introduktion p {
@@ -262,5 +292,12 @@
   .nav ul li a {
     text-decoration: none;
     color: #efece7;
+  }
+
+  .invisible-trigger {
+    top: 20px;
+    left: 20px;
+    width: 95px;
+    height: 200px;
   }
 }
