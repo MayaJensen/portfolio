@@ -16,6 +16,7 @@ h3 {
 h4 {
   font-family: "inria-serif", serif;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 a {
   font-family: "italianno", cursive;
@@ -201,5 +202,17 @@ a {
 
   .nav.open ul {
     padding: 0px 70px 20px 170px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 500px;
+  }
+  .footer-socials,
+  .footer-contact {
+    text-align: center;
   }
 }
