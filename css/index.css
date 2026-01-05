@@ -105,9 +105,25 @@
     transform: translateX(-50%);
   }
 }
-
+.svg-track-reverse {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll-reverse 30s linear infinite;
+}
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .svg-scroll img {
-  width: 70px;
+  width: 150px;
+}
+.svg-scroll-reverse img {
+  width: 150px;
 }
 
 .iphone-stack {
@@ -121,10 +137,10 @@
   z-index: 1;
   object-fit: cover;
   width: auto;
-  height: 130px;
-  margin-left: 20px;
-  margin-top: 10px;
-  border-radius: 10px;
+  height: 195px;
+  margin-left: 5px;
+  margin-top: 18px;
+  border-radius: 12px;
 }
 
 .img-top {
@@ -132,17 +148,27 @@
   z-index: 2;
   object-fit: cover;
   width: 100px;
-  height: 150px;
+  height: 230px;
 }
 
 #iphones {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: flex-start;
-
+  gap: 20px;
+  row-gap: 80px;
   padding-top: 30px;
 }
-
+.mobil1,
+.mobil2,
+.mobil3,
+.mobil4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .read-more {
   display: grid;
   gap: 20px;
