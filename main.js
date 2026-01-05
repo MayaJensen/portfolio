@@ -15,3 +15,9 @@ links.forEach((link) => {
     nav.classList.remove("open");
   });
 });
+
+document.addEventListener("click", (e) => {
+  if (!nav.contains(e.target)) {
+    nav.classList.remove("open");
+  }
+});
