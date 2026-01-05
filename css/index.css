@@ -50,9 +50,13 @@
 .Introduktion {
   font-size: 16px;
   line-height: 2;
-  margin: 20px 40px;
+  margin: 40px 20px;
   max-width: 800px;
   text-align: justify;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 30px 30px;
+
+  background-color: #d8cfc2;
 }
 .Introduktion h2 {
   line-height: 1;
@@ -135,6 +139,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  padding-top: 30px;
 }
 
 .read-more {
@@ -172,10 +178,30 @@
 
 [popover] {
   padding: 20px;
-  max-width: 600px;
+  max-width: 400px;
   max-height: 1000px;
-  margin: 30px auto;
-  border-radius: 10px;
+  margin: 200px auto;
+  border-radius: 3px;
+  line-height: 1.9;
+}
+[popover] h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+[popover] a {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+  background-color: #d8cfc2;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+  font-family: "Inria-serif", serif;
 }
 
 /* USYNLIG KNAP */
@@ -221,6 +247,12 @@
     overflow-x: hidden;
   }
 
+  [popover] {
+    padding: 20px;
+    max-width: 600px;
+    max-height: 1000px;
+  }
+
   .Introduktion {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -248,9 +280,9 @@
 
   .overskrift {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 60px;
+    width: 350px;
   }
-
   .svg-scroll {
     height: 250px;
     padding-top: 50px;
