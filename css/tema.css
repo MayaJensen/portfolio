@@ -124,6 +124,20 @@ main {
   margin-top: 20px;
 }
 
+/* Knap */
+.udforsk-btn {
+  display: block;
+  margin: 0px 110px;
+  padding: 12px 24px;
+  background-color: #998978;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  box-shadow: #353535 1px 1px 4px;
+  border-radius: 2px;
+  text-align: center;
+}
+
 @media (min-width: 1000px) {
   .tema-nav {
     font-size: 20px;

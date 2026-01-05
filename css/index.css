@@ -320,9 +320,11 @@
   }
 
   #iphones {
-    gap: 130px;
-    height: 300px;
-    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px 250px;
+    padding-top: 30px;
+    width: 1000px;
   }
   .img-bottom {
     height: 200px;
@@ -331,7 +333,6 @@
 
   .img-top {
     height: 235px;
-    margin-left: 15px;
   }
 
   .knap img {
