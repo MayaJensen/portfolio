@@ -126,16 +126,22 @@ main {
 
 /* Knap */
 .udforsk-btn {
-  display: block;
-  margin: 0px 110px;
-  padding: 12px 24px;
-  background-color: #998978;
-  color: #fff;
-  text-decoration: none;
-  font-size: 22px;
-  box-shadow: #353535 1px 1px 4px;
-  border-radius: 2px;
   text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  background-color: #d8cfc2;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+}
+.udforsk-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+  background-color: #d9ccbb;
 }
 
 @media (min-width: 1000px) {
