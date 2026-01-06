@@ -50,9 +50,13 @@
 .Introduktion {
   font-size: 16px;
   line-height: 2;
-  margin: 20px 40px;
+  margin: 40px 20px;
   max-width: 800px;
   text-align: justify;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 30px 30px;
+
+  background-color: #d8cfc2;
 }
 .Introduktion h2 {
   line-height: 1;
@@ -90,7 +94,7 @@
   display: flex;
   gap: 40px;
   width: max-content;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
@@ -101,9 +105,25 @@
     transform: translateX(-50%);
   }
 }
-
+.svg-track-reverse {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll-reverse 30s linear infinite;
+}
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .svg-scroll img {
-  width: 70px;
+  width: 150px;
+}
+.svg-scroll-reverse img {
+  width: 150px;
 }
 
 .iphone-stack {
@@ -117,10 +137,10 @@
   z-index: 1;
   object-fit: cover;
   width: auto;
-  height: 130px;
-  margin-left: 20px;
-  margin-top: 10px;
-  border-radius: 10px;
+  height: 195px;
+  margin-left: 5px;
+  margin-top: 18px;
+  border-radius: 12px;
 }
 
 .img-top {
@@ -128,18 +148,29 @@
   z-index: 2;
   object-fit: cover;
   width: 100px;
-  height: 150px;
+  height: 230px;
 }
 
 #iphones {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: flex-start;
+  gap: 20px;
+  row-gap: 80px;
+  padding-top: 30px;
 }
-
+.mobil1,
+.mobil2,
+.mobil3,
+.mobil4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .read-more {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-content: center;
   text-align: center;
@@ -148,14 +179,21 @@
 .knap {
   text-decoration: none;
   color: inherit;
+  display: block;
+  width: 320px;
+}
+.knap:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 .knap img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  max-height: 180px;
+  max-width: 180px;
   object-fit: cover;
   display: block;
-
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin: 5px 10px;
 }
 
@@ -164,13 +202,61 @@
   font-size: 22px;
 }
 
+[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popover] {
+  padding: 20px;
+  max-width: 400px;
+  max-height: 1000px;
+  margin: 200px auto;
+  border-radius: 3px;
+  line-height: 1.9;
+}
+[popover] h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+[popover] a {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+  background-color: #d8cfc2;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+  font-family: "Inria-serif", serif;
+}
+
+/* USYNLIG KNAP */
+.invisible-trigger {
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  height: 200px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
 @media (min-width: 1000px) {
+  .hero2 {
+    max-width: 1100px;
+  }
   .hero-text h1 {
     font-size: 250px;
-    margin-left: 250px;
+    margin-left: 290px;
   }
   .hero-text h2 {
-    margin-left: 255px;
+    margin-left: 295px;
     margin-top: 500px;
     font-size: 25px;
   }
@@ -185,6 +271,16 @@
     transform-origin: left center;
     transform: scale(1.7);
     height: 630px;
+    padding-left: 100px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  [popover] {
+    padding: 20px;
+    max-width: 600px;
+    max-height: 1000px;
   }
 
   .Introduktion {
@@ -193,6 +289,7 @@
     gap: 70px;
     align-items: start;
     margin-top: 120px;
+
     margin-bottom: 100px;
     max-width: 1200px;
     justify-content: center;
@@ -200,7 +297,7 @@
 
   .Introduktion h2 {
     text-align: start;
-    padding-top: 70px;
+    padding-top: 130px;
     padding-left: 70px;
   }
   .Introduktion p {
@@ -213,9 +310,9 @@
 
   .overskrift {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 60px;
+    width: 350px;
   }
-
   .svg-scroll {
     height: 250px;
     padding-top: 50px;
@@ -228,9 +325,11 @@
   }
 
   #iphones {
-    gap: 130px;
-    height: 300px;
-    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px 250px;
+    padding-top: 30px;
+    width: 1000px;
   }
   .img-bottom {
     height: 200px;
@@ -239,15 +338,11 @@
 
   .img-top {
     height: 235px;
-    margin-left: 15px;
   }
 
-  .forste-knap {
-    margin-left: 400px;
-  }
   .knap img {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
   }
   .knap p {
     text-align: center;
@@ -255,8 +350,33 @@
     font-size: 30px;
   }
   .read-more {
-    gap: 50px;
-    margin-top: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 60px 250px;
+    display: grid;
+
+    place-items: center;
   }
-  
+  .forste-knap,
+  .sidste-knap {
+    display: grid;
+    place-items: center;
+    width: 400px;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: #efece7;
+  }
+
+  .invisible-trigger {
+    top: 20px;
+    width: 95px;
+    left: 2px;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .invisible-trigger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+  }
 }

@@ -2,6 +2,12 @@ html {
   background-color: #efece7;
   color: #1a1a1a;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 h1 {
   font-family: "italianno", cursive;
 }
@@ -15,6 +21,11 @@ h3 {
 }
 h4 {
   font-family: "inria-serif", serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+a {
+  font-family: "italianno", cursive;
   font-weight: 300;
 }
 
@@ -83,9 +94,9 @@ h4 {
 /* MENU  */
 .nav ul {
   position: absolute;
-  top: 48px;
+  top: 38px;
   right: 0;
-  align-items: flex-end;
+  text-align: center;
   display: none;
   flex-direction: column;
   gap: 10px;
@@ -95,17 +106,21 @@ h4 {
 /* BURGERMENU ÅBEN */
 .nav.open ul {
   display: flex;
+  background-color: #efece7;
+  padding: 20px 170px 20px 170px;
+  margin-right: -21px;
+  margin-top: -60px;
 }
 
 /* LINKS */
 .nav ul li a {
   text-decoration: none;
   color: #1a1a1a;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 200;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   white-space: nowrap;
+  text-align: center;
 }
 
 /* Hover */
@@ -190,5 +205,21 @@ h4 {
     display: flex;
     flex-direction: row;
     gap: 80px;
+  }
+
+  .nav.open ul {
+    padding: 0px 70px 20px 170px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 500px;
+  }
+  .footer-socials,
+  .footer-contact {
+    text-align: center;
   }
 }
