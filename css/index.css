@@ -50,7 +50,7 @@
 }
 
 .folio {
-  color: white;
+  color: var(--color-single-word);
 }
 
 .Introduktion {
@@ -62,7 +62,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   padding: 30px 30px 30px 30px;
 
-  background-color: #d8cfc2;
+  background-color: var(--color-card-bg);
 }
 .Introduktion h2 {
   line-height: 1;
@@ -82,7 +82,7 @@
 .line {
   width: 50%;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--color-border);
   margin: 60px auto;
 }
 
@@ -210,7 +210,7 @@
 
 [popover]::backdrop {
   backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #0000004d;
 }
 
 [popover] {
@@ -230,8 +230,8 @@
   text-align: center;
   font-size: 15px;
   font-weight: 200;
-  background-color: #d8cfc2;
-  color: black;
+  background-color: var(--color-accent);
+  color: var(--color-text);
   padding: 10px;
   text-decoration: none;
   border-radius: 3px;
@@ -244,7 +244,7 @@
 [popover] a:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
-  background-color: #d9ccbb;
+  background-color: var(--color-hoover);
 }
 .invisible-trigger {
   position: absolute;

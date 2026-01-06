@@ -81,8 +81,8 @@
 .education {
   text-align: center;
   padding: 3rem 1rem 5rem;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .education h2 {
@@ -96,7 +96,7 @@
 
 .edu-line {
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--color-border);
   width: 30px;
   margin-top: 10px;
   margin: 20px auto;
@@ -105,7 +105,7 @@
 .experience {
   text-align: center;
   padding: 3rem 1rem 5rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .experience h2 {
@@ -269,15 +269,15 @@
   .education {
     border-bottom: none;
     border-top: none;
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--color-border);
   }
   .experience {
     border-bottom: none;
   }
 
   .line {
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
   }
 
   .experience {
@@ -297,7 +297,7 @@
     position: absolute;
     padding: 40px 60px 55px 25px;
     display: block; /* hvis du tidligere har display:none på mobil */
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--color-border);
   }
 
   .desktop-grid-edu {
