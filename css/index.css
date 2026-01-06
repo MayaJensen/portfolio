@@ -8,39 +8,45 @@
 .half-image {
   position: absolute;
   right: 0;
-  overflow: hidden;
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 100vh;
   object-fit: cover;
   object-position: 35% 50%;
   filter: grayscale(100%);
 }
+.hero-text {
+  position: relative;
+  height: 100vh;
+}
 
 .hero-text h1 {
   position: absolute;
-  margin-top: 260px;
-  left: 15%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
   font-size: 150px;
   font-weight: 100;
+  font-size: clamp(130px, 20vw, 250px);
 }
-.hero-text h2 {
+.name {
   position: absolute;
-  margin-top: 410px;
-  left: 14%;
-  z-index: 5;
+  top: 55%;
+  left: 16%;
   font-size: 20px;
   font-weight: 100;
+  z-index: 5;
 }
 
-.hero-text h3 {
+.semester {
   position: absolute;
-  margin-top: 380px;
-  left: 300px;
-  z-index: 5;
+  top: 52.5%;
+  left: 69%;
+
   font-size: 20px;
   font-weight: 100;
   color: white;
+  z-index: 5;
 }
 
 .folio {
@@ -172,7 +178,8 @@
 .read-more {
   display: grid;
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
+
   text-align: center;
 }
 
@@ -180,7 +187,7 @@
   text-decoration: none;
   color: inherit;
   display: block;
-  width: 320px;
+  width: 200px;
 }
 .knap:hover {
   transform: translateY(-3px);
@@ -193,7 +200,6 @@
   max-width: 180px;
   object-fit: cover;
   display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin: 5px 10px;
 }
 
@@ -235,7 +241,11 @@
   font-family: "Inria-serif", serif;
 }
 
-/* USYNLIG KNAP */
+[popover] a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
+  background-color: #d9ccbb;
+}
 .invisible-trigger {
   position: absolute;
   top: 15px;
@@ -249,32 +259,32 @@
 
 @media (min-width: 1000px) {
   .hero2 {
-    max-width: 1100px;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: none;
+    overflow: hidden;
   }
   .hero-text h1 {
     font-size: 250px;
-    margin-left: 290px;
-  }
-  .hero-text h2 {
-    margin-left: 295px;
-    margin-top: 500px;
-    font-size: 25px;
-  }
-  .hero-text h3 {
-    margin-top: 460px;
-    font-size: 25px;
-
-    margin-left: 550px;
   }
 
   .half-image {
     transform-origin: left center;
     transform: scale(1.7);
-    height: 630px;
-    padding-left: 100px;
+    height: 100vh;
   }
-  body {
-    overflow-x: hidden;
+
+  .name {
+    top: 61%;
+    left: 32%;
+    font-size: 28px;
+  }
+
+  .semester {
+    top: 57%;
+    left: 61%;
+    font-size: 28px;
   }
 
   [popover] {
@@ -329,7 +339,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 60px 250px;
     padding-top: 30px;
-    width: 1000px;
   }
   .img-bottom {
     height: 200px;
@@ -339,21 +348,28 @@
   .img-top {
     height: 235px;
   }
-
+  .knap {
+    width: 320px;
+  }
   .knap img {
     max-width: 300px;
     max-height: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .knap p {
     text-align: center;
     width: 300px;
     font-size: 30px;
   }
+  .knap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  }
+
   .read-more {
     grid-template-columns: repeat(2, 1fr);
     margin: 60px 250px;
     display: grid;
-
     place-items: center;
   }
   .forste-knap,
